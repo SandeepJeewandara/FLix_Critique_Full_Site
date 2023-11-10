@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/xml.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Read XML File</title>
+</head>
+<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Movie Web</title>
+      
+        
+      </head>
+      
+      <!-- Header Part -->
+      <header class="header" id="header">
+        <div class="container">
+          <div href="#" class="logo">
+            <img src="img/Logo.png" alt="Site logo" id="logo"/>
+          </div>
+    
+          <!-- Navigation Bar -->
+          <nav>
+            <ul>
+              <a href="index.html">Home</a>
+            </ul>
+            <ul>
+              <a href="Categories.html">Films</a>
+            </ul>
+            <ul>
+              <a href="Favourites.html">Favourites</a>
+            </ul>
+            <ul>
+              <a href="Quiz.html">Quiz</a>
+            </ul>
+            <ul>
+              <a href="mainProducts.html">Products</a>
+            </ul>
+            <ul>
+              <a href="aboutUs.html">About Us</a>
+            </ul>
+          </nav>
+          
+          <!-- Tool Bar -->
+          <div class="toolbar">
+            <button onclick="change_mode();" class="Light-mode">
+              <ion-icon
+                class="mode-icon"
+                name="contrast-outline"
+                id="theme_button"
+              ></ion-icon>
+              <span style="display: none">Dark Mode</span>
+            </button>
+    
+          </div>
+        </div>
+      </header>
+
+        <div class="section-subscribe" id="newsletter">
+          <div class="subscribe-box" id="subscribe-box">
+          
+              <div class="newsLetter" >
+               
+                  <span class="icon-close" onclick="newsLetterClose();">
+                    <ion-icon name="close"></ion-icon>
+                  </span>
+                    
+                    <h2>NewsLetter</h2>
+                    <form class="newsform" onsubmit="return validateForm()">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required>
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                        <br>
+                        <input class="form-subscribe" type="submit" value="Subscribe">
+                    </form>
+      
+          
+            
+            </div>
+          </div>
+        </div>
+
+        <div class="colour-container">
+            <div>
+                <label for="backgroundColorSelect">Background Color:</label>
+                <select id="backgroundColorSelect">
+                    <option value="white">White</option>
+                    <option value="lightblue">Light Blue</option>
+                    <option value="lightpink">Light Pink</option>
+                    <option value="lightgreen">Light Green</option>
+                </select>
+            </div>
+        
+            <div>
+                <label for="textColorSelect">Text Color:</label>
+                <select id="textColorSelect">
+                    <option value="black">Black</option>
+                    <option value="blue">Blue</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+        </div>
+        
+        <marquee>
+        <div id="movieData" class="card-container">
+
+        </div>
+        </marquee>
+        
+        <button id = "sub" class="subscribe-button" onclick="newsletterPopup()" >Subscribe</button>
+        
+
+    <!-- Include the external JavaScript file -->
+    <script src="script/favourites.js"></script>
+    <script src="script/color.js"></script>
+    <script src="script/headerscript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+
+      var box = document.getElementById("subscribe-box");
+      
+
+      function newsletterPopup(){
+      newsletter.classList.add("active-popup");
+      box.classList.add("box-active");
+      }
+
+      function newsLetterClose(){
+        newsletter.classList.remove("active-popup");
+        box.classList.remove("box-active")
+      }
+
+      fun
+
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="container3">
+        <div class="row">
+          <div class="footer-col">
+            <p>Website</p>
+            <ul>
+              <li><a href="aboutUs.html">about us</a></li>
+              <li><a href="Categories.html">Films</a></li>
+              <li><a href="Quiz.html">Quiz</a></li>
+              
+            </ul>
+          </div>
+          <div class="footer-col">
+            <p>get help</p>
+            <ul>
+              <li><a href="Terms&Conditions.html">Terms & Conditions</a></li>
+              <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+              <li><a href="#logo">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <p>Products</p>
+            <ul>
+              <li><a href="mainProducts.html">Clothing</a></li>
+              <li><a href="mainProducts.html">Posters</a></li>
+              <li><a href="mainProducts.html">Accessories</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <p>follow us</p>
+            <div class="social-links">
+              <a href="https://www.facebook.com/"
+                ><img src="img/Student2/facebook.png" alt="Facebook Logo"
+              /></a>
+              <a href="https://www.instagram.com/"
+                ><img src="img/Student2/instagram.png" alt="Instagram Logo"
+              /></a>
+              <a href="https://lk.linkedin.com/"
+                ><img src="img/Student2/linkedin.png" alt="Linkedin Logo"
+              /></a>
+              <a href="https://twitter.com/"
+                ><img src="img/Student2/twitter.png" alt="Twitter Logo"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-bottom">
+      <p>
+        Copyright &copy; 2023 Informatics Institute of Technology. Desinged by
+        Level 04 AI & Data Science Students.
+      </p>
+    </div>
+</body>
+</html>

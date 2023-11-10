@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FlixCritique</title>
+
+    <style>
+        body {
+            background-color: #020000;
+            color: #ECEEF3;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1400px;
+            margin: 50px auto;
+            flex-wrap: wrap;
+        }
+
+        .photo {
+            text-align: center;
+            background-color: #815454;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #020000;
+            width: 300px;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure the image fits within the container */
+            border-radius: 10px;
+        }
+
+        .photo .description {
+            width: 300px;
+            background-color: #391F7E; /* Different background color for the description box */
+            padding: 10px;
+            border-radius: 0 0 10px 10px; /* Rounded corners at the bottom */
+        }
+
+        .photo p {
+            margin: 0; 
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .team-intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 100px;
+            margin: 0;
+            color: #ECEEF3;
+        }
+
+        h3 {
+            font-size: 50px;
+            margin: 0;
+            color: #815454;
+        }
+    </style>
+    <script>
+        setTimeout(function() {
+           window.location.replace("index.html");
+        }, 5000);
+    </script>
+
+</head>
+
+<body>
+    
+    <div class="team-intro">
+        <h1>Flix Critique</h1>
+        <h3>Meet the Team</h3>
+    </div>
+
+    <div class="container">
+        <div class="photo">
+            <img src="img2/Praveen.jpg" alt="Praveen">
+            <div class="description">
+                <p>J.P. Rajes
+                    <br /> IIT ID - 20220268
+                    <br /> RGU ID - 2312545</p>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="img2/Tharusha.jpg" alt="Tharusha">
+            <div class="description">
+                <p>T.J.P. Fernando
+					<br /> IIT ID - 20220346
+					<br /> RGU ID - 2312549</p>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="img2/Sandeep.jpg" alt="Sandeep">
+            <div class="description">
+                <p>J.T.S. Jeewandara
+					<br /> IIT ID - 20220244
+					<br /> RGU ID - 2312543</p>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="img2/Thiseni.jpg" alt="Thiseni">
+            <div class="description">
+                <p>P.A.T.S. Paththamperuma
+                    <br /> IIT ID - 20220256
+					   <br /> RGU ID - 2312544</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

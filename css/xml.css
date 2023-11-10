@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.colour-container {
+  position: relative;
+  display: flex;
+  margin-top: 7%;
+  margin-left: 70%;
+}
+
+.card-container {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.card-container img {
+  display: flex;
+  height: 300px;
+  align-items: center;
+  margin-right: 50px;
+}
+.card {
+  display: inline-block;
+  margin: 10px;
+  width: 200px;
+  height: 300px;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.Heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 25vh;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Add some style to the movie images */
+.card img {
+  width: 200px;
+  height: 250px;
+}
+
+/* Add some style to the movie titles */
+.card h3 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.background-wrapper {
+  position: absolute;
+  width: 100%;
+  background-color: #007bff;
+  z-index: 100;
+}
+
+.section-subscribe {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 8;
+}
+
+
+.subscribe-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: -10;
+  backdrop-filter: blur(20px);
+}
+
+.box-active{
+    display: flex;
+}
+
+.newsLetter {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  overflow: hidden;
+  transition: transform 0.5s ease, height 0.2s ease;
+}
+
+.newsLetter .icon-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background: #162938;
+  font-size: 2em;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.newsLetter h2 {
+  font-size: 30px;
+}
+
+.newsform {
+  justify-content: center;
+}
+
+.newsform label {
+  margin-top: 20px;
+}
+
+.form-subscribe {
+  margin-top: 5%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.subscribe-button {
+  position: relative;
+  bottom: 20px;
+  margin-left: 90%;
+  justify-self: end;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+h1 {
+  color: #007bff;
+}
+
+label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

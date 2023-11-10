@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+
+  </head>
+
+  <body class="quiz-body">
+    
+      <!-- Header Part -->
+      <header class="header" id="header">
+        <div class="container">
+          <div href="#" class="logo">
+            <img src="img/Logo.png" alt="Site logo" id="logo"/>
+          </div>
+    
+          <!-- Navigation Bar -->
+          <nav>
+            <ul>
+              <a href="index.html">Home</a>
+            </ul>
+            <ul>
+              <a href="Categories.html">Films</a>
+            </ul>
+            <ul>
+              <a href="Favourites.html">Favourites</a>
+            </ul>
+            <ul>
+              <a href="Quiz.html">Quiz</a>
+            </ul>
+            <ul>
+              <a href="mainProducts.html">Products</a>
+            </ul>
+            <ul>
+              <a href="aboutUs.html">About Us</a>
+            </ul>
+          </nav>
+          
+          <!-- Tool Bar -->
+          <div class="toolbar">
+            <button onclick="change_mode();" class="Light-mode">
+              <ion-icon
+                class="mode-icon"
+                name="contrast-outline"
+                id="theme_button"
+              ></ion-icon>
+              <span style="display: none">Dark Mode</span>
+            </button>
+    
+          </div>
+        </div>
+      </header>
+
+     <!-- Quiz Container -->
+    <div class="quiz-container">
+      <div class="quiz-background-box"><p></p></div>
+      <button class="quiz-start-button" onclick="startQuiz()">
+        Start Quiz
+        <span class="play-icon">
+          <ion-icon name="play-outline"></ion-icon>
+        </span>
+      </button>
+
+      <div class="quiz-img2">
+        <img src="img/Student2/pngegg (1).png" alt="Movie Character" />
+      </div>
+    </div>
+
+   <!-- Footer -->
+   <footer class="footer" id="footer">
+    <div class="container3">
+      <div class="row">
+        <div class="footer-col">
+          <p>Website</p>
+          <ul>
+            <li><a href="aboutUs.html">about us</a></li>
+            <li><a href="Categories.html">Films</a></li>
+            <li><a href="Quiz.html">Quiz</a></li>
+            
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p>get help</p>
+          <ul>
+            <li><a href="Terms&Conditions.html">Terms & Conditions</a></li>
+            <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+            <li><a href="#logo">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <p>Products</p>
+          <ul>
+            <li><a href="mainProducts.html">Clothing</a></li>
+            <li><a href="mainProducts.html">Posters</a></li>
+            <li><a href="mainProducts.html">Accessories</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <p>follow us</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/"
+              ><img src="img/Student2/facebook.png" alt="Facebook Logo"
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img src="img/Student2/instagram.png" alt="Instagram Logo"
+            /></a>
+            <a href="https://lk.linkedin.com/"
+              ><img src="img/Student2/linkedin.png" alt="Linkedin Logo"
+            /></a>
+            <a href="https://twitter.com/"
+              ><img src="img/Student2/twitter.png" alt="Twitter Logo"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-bottom">
+    <p>
+      Copyright &copy; 2023 Informatics Institute of Technology. Desinged by
+      Level 04 AI & Data Science Students.
+    </p>
+  </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>

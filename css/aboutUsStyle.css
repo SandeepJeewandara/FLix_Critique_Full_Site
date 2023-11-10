@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin-top: 8%;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #020000e2;
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+.main{
+text-align: center;
+padding-top: 30px;
+padding-bottom: 30px;
+}
+.main p{
+  font-weight: 500;
+  font-size: 70px;
+  margin: 0;
+  color: #eceef3;
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container .box {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+  
+}
+
+.container .box:hover .imgBox {
+  transform: translate(-3.5rem, -3.5rem);
+}
+
+.container .box:hover .content {
+  transform: translate(3.5rem, 3.5rem);
+}
+
+.imgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+  border: 4px solid #bd3442c7;
+}
+
+.imgBox img {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  resize: both;
+}
+
+.content {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 25rem;
+  height: 25rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: #0200007b;
+  z-index: 1;
+  align-items: flex-end;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+  border: 3px solid #bd3442c7;
+}
+
+.content h2 {
+  display: block;
+  font-size: 2rem;
+  color: #bd3442c7;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: 1px;
+}
+
+.content span {
+  color: #eceef3;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  .container .box:hover .content {
+    transform: translate(0, 3.5rem);
+  }
+  .container .box:hover .imgBox {
+    transform: translate(0, -3.5rem);
+  }
+}
+.personal{
+  position: absolute;
+  top: 31rem;
+  left: 7rem;
+  background-color: #bd3442c7;
+  color: #eceef3;
+  padding: 5px;
+  border: 2px solid #bd3442c7;
+  border-radius: 3px;
+  z-index: 10rem;
+}
+.personal a{
+  text-decoration: none ;
+  color: #eceef3;
+}

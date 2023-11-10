@@ -1,0 +1,76 @@
+[
+    {
+        "id": 1,
+        "name": "Spiderman Hoodie",
+        "price": 32,
+        "image": "img3/spidermonHoodie.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Scream T-shirt",
+        "price": 18,
+        "image": "img3/screamTee.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Super Mario Figurine",
+        "price": 25,
+        "image": "img3/supermarioFigure.jpg"
+    }
+    ,
+    {
+        "id": 4,
+        "name": "Guardians of the Galaxy Cover",
+        "price": 10,
+        "image": "img3/GOGcover.jpg" 
+    },
+    {
+        "id": 5,
+        "name": "Creed Poster",
+        "price": 2,
+        "image": "img3/creedPoster2.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Top Gun Maverick Jacket",
+        "price": 55,
+        "image": "img3/topGunHoodie.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Guardians of the Galaxy - Groot Figurine",
+        "price": 25,
+        "image": "img3/grootFigure.jpeg"
+    },
+    {
+        "id": 8,
+        "name": "Super Mario Cover",
+        "price": 15,
+        "image": "img3/supermarioCover2.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Spiderman T-shirt",
+        "price": 24,
+        "image": "img3/spidermonTee.jpg"
+    }
+    ,
+    {
+        "id": 10,
+        "name": "The Mother Poster",
+        "price": 2,
+        "image": "img3/theMotherPoster.jpg" 
+    },
+    {
+        "id": 11,
+        "name": "Super Mario T-shirt",
+        "price": 20,
+        "image": "img3/supermarioTee.jpg"
+    },
+    {
+        "id":12,
+        "name": "Scream Cover",
+        "price": 12,
+        "image": "img3/screamCover.jpg"
+    }
+]

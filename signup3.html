@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--<meta charset="UTF-8">-->
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="css/signup.css" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle">3</div>
+      <div class="title">User Preferences</div>
+      <div class="content">
+        <form id="application3">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details"><label for="genre">Select the genre of movies you want to watch</label></span>
+              <select name="genre" id="genre">
+                <option value="action">Action</option>
+                <option value="adventure">Adventure</option>
+                <option value="animation">Animation</option>
+                <option value="comedy">Comedy</option>
+                <option value="crime">Crime</option>
+                <option value="horror">Horror</option>
+                <option value="mystery">Mystery</option>
+                <option value="romance">Romance</option>
+                <option value="scifi">Sci-Fi</option>
+                <option value="thriller">Thriller</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <span class="details"><label for="year">Select the release year of movies</label></span>
+              <select name="year" id="year">
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2018">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <span class="details"><label for="movietype">What type of movies do you prefer?</label></span>
+              <select name="movietype" id="movietype">
+                <option value="award">Award-Winning movies</option>
+                <option value="cult">Cult classics movies</option>
+                <option value="high">Highest rated movies</option>
+                <option value="diverse">Diversely rated movies</option>
+                <option value="critic">Critically acclaimed films</option>
+                <option value="audience">Audience favorites</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <span class="details"><label for="maxresultlist">Number of movies to appear in the result list (maximum 5)</label></span>
+              <input type="number" id="maxresultlist" required oninput="validateMaxResultList()" />
+              <div id="errorname9"></div>
+            </div>
+          </div>
+          <div class="button2">
+            <input type="reset" value="Reset" />
+          </div>
+          <div class="button">
+            <input type="button" id="nextpage3" value="Next" onclick="window.location.href='signup4.html'">
+            <!-- <script>
+                 var nextpage3 = document.getElementById('nextpage3');
+                nextpage3.addEventListener('click', function() {
+                window.location.href = 'signup4.html';
+                });
+            </script> -->
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script/validation.js"></script>
+  </body>
+</html>

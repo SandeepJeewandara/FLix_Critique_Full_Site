@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--<meta charset="UTF-8">-->
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="css/signup.css" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle">2</div>
+      <div class="title">User Details</div>
+      <div class="content">
+        <form id="application2">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details"><label for="username">Username</label></span>
+              <input type="text" id="username" placeholder="Enter your username" required />
+            </div>
+            <div class="input-box">
+              <span class="details"><label for="pass">Password</label></span>
+              <input type="password" id="pass" placeholder="Enter your password" required oninput="validatePassword()"/>
+              <div id="errorname7"></div>
+
+            </div>
+            <div class="input-box">
+              <span class="details"><label for="repass">Confirm Password</label></span>
+              <input type="password" id="repass" placeholder="Confirm your password" required oninput="validatePassword()"/>
+              <div id="errorname8"></div>
+            </div>
+          </div>
+          <div class="button2">
+            <input type="reset" value="Reset" />
+          </div>
+          <div class="button">
+            <input type="button" id="nextpage2" value="Next" onclick="window.location.href='signup3.html'">
+            <!-- <script>
+                var nextpage2 = document.getElementById('nextpage2');
+                nextpage2.addEventListener('click', function() {
+                window.location.href = 'signup3.html';
+                });
+            </script> -->
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script/validation.js"></script>
+  </body>
+</html>

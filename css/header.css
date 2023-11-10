@@ -1,0 +1,273 @@
+:root {
+  font-family: "Poppins", sans-serif;
+}
+
+.body {
+  background-color:#1d1a28;
+}
+
+/*-----------------------------------*\
+ * #Header Part
+\*-----------------------------------*/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-block: 15px;
+  transition: 0.25s ease-in;
+  z-index: 4;
+
+}
+
+.header-scroll {
+  background-color: rgb(22, 28, 30);
+  height: 50px;
+}
+
+.header.active {
+  background: #1b2227;
+  padding-block: 13px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1400px;
+  height: 60px;
+  margin-inline: auto;
+  padding-inline: 15px;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  margin-left: 30px;
+  align-items: center;
+}
+
+.logo img {
+  width: 100%;
+  height: 70px;
+}
+
+.logo h1 {
+  font-family: monospace;
+  font-size: 30px;
+  color: #fff;
+  margin-left: 10px;
+}
+
+/*-----------------------------------*\
+ * #Navigation Bar
+\*-----------------------------------*/
+
+nav {
+  position: absolute;
+  top: 50%;
+  left:375px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+nav ul {
+  font-family: var(--ff-poppins);
+  display: inline;
+  font-size: 20px;
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #fff;
+  transition: font-size, 0.2s;
+}
+
+nav ul a:hover {
+  font-size: 22px;
+  transition: 0.2s;
+  text-decoration: underline;
+  text-decoration-color: #8cc92d;
+}
+
+.Sign-in {
+  position: absolute;
+  right:10px;
+}
+
+.btn-primary {
+  position: relative;
+  right: 100px;
+  background: #333333;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 09px 15px;
+  border: 2px solid #e2d703;
+  border-radius:20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.15s ease;
+  font-family: var(--ff-poppins);
+  font-weight: 400;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #e2d703;
+  color: #1d1a28;
+}
+
+
+
+
+
+
+/*-----------------------------------*\
+ * #Tool Bar
+\*-----------------------------------*/
+
+.toolbar{
+  position:fixed;
+  right:20px;
+  display:flex;
+  justify-content: flex-start;
+}
+
+.Light-mode{
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.mode-icon{
+  height:25px;
+  width: 25px;
+  color: white;
+  opacity: 0.6;
+}
+
+.change-mode{
+  color: #101010;
+}
+
+
+
+
+/*-----------------------------------*\
+ * #Page Footer
+\*-----------------------------------*/
+
+
+/* Meka One ganata Hadaganna */
+.footer {
+  position: relative;
+  margin-top: 60%;       
+  background-color: #24262b;
+  padding: 10px;
+  left: auto;
+  border: none;
+  box-shadow: none;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 20%;
+  padding: 15px;
+  height: 180px;
+}
+.footer-col p {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 0px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col p::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  background-color: #8cc92d;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  font-size: 18px;
+}
+.footer-col .social-links {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  background-color: rgb(219, 219, 219);
+  margin: 20px 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  align-items: center;
+  justify-content: center;
+}
+.footer-col .social-links a:hover {
+  background-color: #8d8d8d;
+}
+
+.footer-col .social-links img {
+  width: 30px;
+}
+
+.footer-bottom {
+  background: #121212;
+  width: 99%;
+  padding: 2px 0;
+  text-align: center;
+  color: #b09b9b;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  position: absolute;
+}
+
+.footer-bottom p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fffbfbde;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}

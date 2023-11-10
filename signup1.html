@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--<meta charset="UTF-8">-->
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="css/signup.css" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  </head>
+  <!--<script src="popup.js"></script>  Link the js file to get popup msg saying the name of the user-->
+  <body>
+    <div class="container">
+      <div class="circle">1</div>
+
+      <div class="title">Personal Details</div>
+      <div class="content">
+        <form id="application">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details"> <label for="fname"> First Name </label> </span>
+              <input type="text" name="name" id="fname" placeholder="Enter your first name" required/>
+              <div id="errorname"></div>
+            </div>
+            <div class="input-box">
+              <span class="details"> <label for="lname"> Last Name </label> </span>
+              <input type="text" id="lname" placeholder="Enter your last name" required/>
+              <div id="errorname2"></div>
+            </div>
+            <div class="input-box">
+              <span class="details"><label for="age">Age</label></span>
+              <input type="number" id="age" required oninput="validateAge()" />
+              <div id="errorname6"></div>
+            </div>
+            <div class="input-box">
+              <span class="details"><label for="dob">Date Of Birth</label></span>
+              <input type="date" id="dob" required />
+            </div>
+            <div class="input-box">
+              <span class="details"><label for="job">Occupation</label></span>
+              <input type="text" id="job" maxlength="40" required />
+              <div id="errorname3"></div>
+
+            </div>
+            <div class="input-box">
+              <span class="details"><label for="email">Email</label></span>
+              <input type="email" id="email" placeholder="Enter your email" required/>
+              <div id="errorname4"></div>
+            </div>
+            <div class="input-box">
+              <span class="details"><label for="phone">Phone Number</label></span>
+              <input type="tel" id="phone" placeholder="Enter your number" maxlength="12" required oninput="validatePhoneNumber()"/>
+              <div id="errorname5"></div>
+            </div>
+          </div>
+          <div class="gender-details">
+            <input type="radio" name="gender" class="gender" id="dot-1" />
+            <input type="radio" name="gender" class="gender" id="dot-2" />
+            <input type="radio" name="gender" class="gender" id="dot-3" />
+            <span class="gender-title"><label for="gender">Gender</label></span>
+            <div class="category">
+              <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+              </label>
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Prefer not to say</span>
+              </label>
+            </div>
+          </div>
+          <div class="button2">
+            <input type="reset" value="Reset" />
+          </div>
+          <div class="button">
+            <input type="button" id="nextpage" value="Next" onclick="popupmsg()">
+            <script>
+                var nextpage = document.getElementById('nextpage');
+                nextpage.addEventListener('click', function() {
+                  var fName = document.getElementById("fname").value;
+                  localStorage.setItem("firstName",fName);
+                  window.location.href = 'signup2.html';
+                });
+            </script>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script/validation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categories</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="categories">
+   <!-- Header Part -->
+   <header class="header" id="header">
+    <div class="container">
+      <div href="#" class="logo">
+        <img src="img/Logo.png" alt="Site logo" id="logo"/>
+      </div>
+
+      <!-- Navigation Bar -->
+      <nav>
+        <ul>
+          <a href="index.html">Home</a>
+        </ul>
+        <ul>
+          <a href="Categories.html">Films</a>
+        </ul>
+        <ul>
+          <a href="Favourites.html">Favourites</a>
+        </ul>
+        <ul>
+          <a href="Quiz.html">Quiz</a>
+        </ul>
+        <ul>
+          <a href="mainProducts.html">Products</a>
+        </ul>
+        <ul>
+          <a href="aboutUs.html">About Us</a>
+        </ul>
+      </nav>
+      
+      <!-- Tool Bar -->
+      <div class="toolbar">
+        <button onclick="change_mode();" class="Light-mode">
+          <ion-icon
+            class="mode-icon"
+            name="contrast-outline"
+            id="theme_button"
+          ></ion-icon>
+          <span style="display: none">Dark Mode</span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+    <!-- Categories Bar -->
+    <div class="categories-bar">
+      <div class="category">
+        <a href="#" class="btn-category" data-category="action">Action</a>
+
+        <a href="#" class="btn-category" data-category="adventure">Adventure</a>
+
+        <a href="#" class="btn-category" data-category="animtion">Animation</a>
+
+        <a href="#" class="btn-category" data-category="comedy">Comedy</a>
+
+        <a href="#" class="btn-category" data-category="crime">Crime</a>
+
+        <a href="#" class="btn-category" data-category="horror">Horror</a>
+
+        <a href="#" class="btn-category" data-category="mystery">Mystery</a>
+
+        <a href="#" class="btn-category" data-category="romance">Romance</a>
+
+        <a href="#" class="btn-category" data-category="sci-fi">Sci-fi</a>
+
+        <a href="#" class="btn-category" data-category="thriller">Thriller</a>
+      </div>
+    </div>
+
+    <!-- Category Banners -->
+    <div class="main-container-div">
+      <div class="title-main-container">
+        <div class="main-titles">
+          <div class="title-container-box">
+            <div class="title-container">
+              <div class="category-banner" data-category="action">
+                <a href="#">
+                  <img
+                    src="Banners/Extraction 2.jpg"
+                    alt="Extraction 2 Banner"
+                    onclick="showFilm1();"
+                  />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="action">
+                <a href="#">
+                  <img
+                    src="Banners/Top Gun.jpg"
+                    alt="Top Gun Banner"
+                    onclick="showFilm2();"
+                  />
+                </a>
+              </div>
+
+              <div
+                class="category-banner"
+                data-category="action"
+                onclick="showFilm3();"
+              >
+                <a href="#">
+                  <img src="Banners/John Wick.jpg" alt="John Wick Banner" />
+                </a>
+              </div>
+
+              <div
+                class="category-banner"
+                data-category="action"
+                onclick="showFilm4();"
+              >
+                <a href="#">
+                  <img src="Banners/Creed 3.jpg" alt="Creed 3 Banner" />
+                </a>
+              </div>
+
+              <div
+                class="category-banner"
+                data-category="adventure"
+                onclick="showFilm5();"
+              >
+                <a href="#">
+                  <img src="Banners/The Mother.jpeg" alt="The Mother Banner" />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="adventure">
+                <a href="#">
+                  <img src="Banners/Wonka.jpg" alt="Wonka Banner" />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="adventure">
+                <a href="#">
+                  <img
+                    src="Banners/Knights of the Zodiac.jpg"
+                    alt="Knights of the Zodiac Banner"
+                  />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="adventure">
+                <a href="#">
+                  <img src="Banners/Chupa.jpg" alt="Chupa Banner" />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="animtion">
+                <a href="#">
+                  <img
+                    src="Banners/The Super Mario Bros.jpg"
+                    alt="The Super Mario Bros Banner"
+                  />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="animtion">
+                <a href="#">
+                  <img
+                    src="Banners/Spider Man Across The Spider Universe.jpg"
+                    alt="Spider Man Banner"
+                  />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="animtion">
+                <a href="#">
+                  <img
+                    src="Banners/The Magician's Elephant.jpg"
+                    alt="The Magician's Elephant Banner"
+                  />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="animtion">
+                <a href="#">
+                  <img src="Banners/Mummies.jpg" alt="Mummies Banner" />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="comedy">
+                <a href="#">
+                  <img
+                    src="Banners/No Hard Feelings.jpg"
+                    alt="No Hard Feelings Banner"
+                  />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="comedy">
+                <a href="#">
+                  <img
+                    src="Banners/Murder Mystery 2.jpg"
+                    alt="Murder Mystery Banner"
+                  />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="comedy">
+                <a href="#">
+                  <img
+                    src="Banners/About my Father.jpg"
+                    alt="About My Farther Banner"
+                  />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="comedy">
+                <a href="#">
+                  <img src="Banners/Champions.jpeg" alt="Champions Banner" />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="crime">
+                <a href="#">
+                  <img
+                    src="Banners/To Catch A Killer.jpg"
+                    alt="To Catch A Killer Banner"
+                  />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="crime">
+                <a href="#">
+                  <img src="Banners/Sharper.jpg" alt="Sharper Banner" />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="crime">
+                <a href="#">
+                  <img src="Banners/AKA.jpg" alt="AKA Banner" />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="crime">
+                <a href="#">
+                  <img src="Banners/The Outfit.jpg" alt="The Outfit Banner" />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="horror">
+                <a href="#">
+                  <img
+                    src="Banners/EVIL DEAD RISE.jpg"
+                    alt="Evid Dead Rise Banner"
+                  />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="horror">
+                <a href="#">
+                  <img
+                    src="Banners/Infinity pool.jpg"
+                    alt="Infinity Pool Banner"
+                  />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="horror">
+                <a href="#">
+                  <img
+                    src="Banners/The Pope's Exorcist.jpg"
+                    alt="The Pope's Exorcist Banner"
+                  />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="horror">
+                <a href="#">
+                  <img src="Banners/Scream VI.jpg" alt="Scream VI Banner" />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="mystery">
+                <a href="#">
+                  <img src="Banners/Missing.jpg" alt="Missing Banner" />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="mystery">
+                <a href="#">
+                  <img
+                    src="Banners/Knock at the Cabin.jpg"
+                    alt="Knock at the Cabin Banner"
+                  />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="mystery">
+                <a href="#">
+                  <img src="Banners/Black Demon.jpg" alt="Black Demon Banner" />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="mystery">
+                <a href="#">
+                  <img src="Banners/One Ranger.jpg" alt="One Ranger Banner" />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="romance">
+                <a href="#">
+                  <img
+                    src="Banners/A Tourist's Guide to Love.jpg"
+                    alt="A Tourist's Guide to Love Banner"
+                  />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="romance">
+                <a href="#">
+                  <img src="Banners/Love Again.jpeg" alt="Love Again Banner" />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="romance">
+                <a href="#">
+                  <img
+                    src="Banners/Beautiful Disaster.jpg"
+                    alt="Beautiful Disaster Banner"
+                  />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="romance">
+                <a href="#">
+                  <img src="Banners/My Fault.jpg" alt="My Fault Banner" />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="sci-fi">
+                <a href="#">
+                  <img
+                    src="Banners/Transformers.jpg"
+                    alt="Transfomers Banner"
+                  />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="sci-fi">
+                <a href="#">
+                  <img src="Banners/Avatar.jpg" alt="Avatar Banner" />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="sci-fi">
+                <a href="#">
+                  <img src="Banners/Coyote.jpg" alt="Coyote Banner" />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="sci-fi">
+                <a href="#">
+                  <img
+                    src="Banners/Guardian Of The Galaxy.jpg"
+                    alt="Guardian Of The Galaxy Banner"
+                  />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="thriller">
+                <a href="#">
+                  <img src="Banners/Plane.jpg" alt="Plane Banner" />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="thriller">
+                <a href="#">
+                  <img src="Banners/Luther.jpeg" alt="Luther Banner" />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="thriller">
+                <a href="#">
+                  <img src="Banners/Assasin.jpeg" alt="Assasin Banner" />
+                </a>
+              </div>
+
+              <div class="category-banner" data-category="thriller">
+                <a href="#">
+                  <img src="Banners/Teen Wolf.jpeg" alt="Teen Wolf Banner" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Film Details Preview -->
+    <div class="film-detail-main hide" id="film1">
+      <div class="film-details-box" id="film_box" onclick="showFilm1();">
+        <div class="film-details">
+          <div class="film-detail-img">
+            <img src="Banners/Extraction 2.jpg" alt="Extraction 2 Banner" />
+          </div>
+          <div class="film-detail-text-areas">
+            <h1 class="film-detail-title">
+              Extraction 2 - 2023 <span class="film-duration">2h 2m</span>
+            </h1>
+
+            <div class="film-rating">
+              <h2 class="rating-title">
+                Rating: <span class="rating-score">8.3/10</span>
+              </h2>
+            </div>
+
+            <p class="film-description">
+              After barely surviving his grievous wounds from his mission in
+              Dhaka, Bangladesh, Tyler Rake is back, and his team is ready to
+              take on their next mission.
+            </p>
+
+            <div class="cast-box">
+              <h4 class="cast-title">Cast:</h4>
+              <ul class="cast-list">
+                <li>Chris Hemsworth as Tyler Rake</li>
+                <li>Golshifteh Farahani as Nik Khan</li>
+                <li>Adam Bessa as Yaz Khan</li>
+                <li>Tornike Gogrichiani as Zurab Radiani</li>
+              </ul>
+            </div>
+
+            <div class="explore-field">
+              <button class="explore-button">Explore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="film-detail-main hide" id="film2">
+      <div class="film-details-box" id="film_box" onclick="showFilm2();">
+        <div class="film-details">
+          <div class="film-detail-img">
+            <img src="Banners/Top Gun.jpg" alt="Top Gun Banner" />
+          </div>
+          <div class="film-detail-text-areas">
+            <h1 class="film-detail-title">
+              Top Gun: Maverick 2022 <span class="film-duration">2h 10m</span>
+            </h1>
+
+            <div class="film-rating">
+              <h2 class="rating-title">
+                Rating: <span class="rating-score">8.3/10</span>
+              </h2>
+            </div>
+
+            <p class="film-description">
+              After thirty years, Maverick is still pushing the envelope as a
+              top naval aviator, but must confront ghosts of his past when he
+              leads TOP GUN's elite graduates on a mission that demands the
+              ultimate sacrifice from those chosen to fly it.
+            </p>
+
+            <div class="cast-box">
+              <h4 class="cast-title">Cast:</h4>
+              <ul class="cast-list">
+                <li>Tom Cruise as Capt. Pete 'Maverick' Mitchell</li>
+                <li>Jennifer Connelly as Penny Benjamin</li>
+                <li>Miles Teller as Lt. Bradley 'Rooster' Bradshaw</li>
+                <li>Val Kilmer as Adm. Tom 'Iceman' Kazansky</li>
+              </ul>
+            </div>
+
+            <div class="explore-field">
+              <button class="explore-button">Explore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="film-detail-main hide" id="film3">
+      <div class="film-details-box" id="film_box" onclick="showFilm3();">
+        <div class="film-details">
+          <div class="film-detail-img">
+            <img src="Banners/John Wick.jpg" alt="John Wick Banner" />
+          </div>
+          <div class="film-detail-text-areas">
+            <h1 class="film-detail-title">
+              John Wick: Chapter 4 <span class="film-duration">2h 49m</span>
+            </h1>
+
+            <div class="film-rating">
+              <h2 class="rating-title">
+                Rating: <span class="rating-score">7.9/10</span>
+              </h2>
+            </div>
+
+            <p class="film-description">
+              John Wick uncovers a path to defeating The High Table. But before
+              he can earn his freedom, Wick must face off against a new enemy
+              with powerful alliances across the globe and forces that turn old
+              friends into foes.
+            </p>
+
+            <div class="cast-box">
+              <h4 class="cast-title">Cast:</h4>
+              <ul class="cast-list">
+                <li>Keanu Reeves as John Wick</li>
+                <li>Laurence Fishburne as Bowery King</li>
+                <li>George Georgiou as The Elder</li>
+                <li>Lance Reddick as Charon</li>
+              </ul>
+            </div>
+
+            <div class="explore-field">
+              <button class="explore-button">Explore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="film-detail-main hide" id="film4">
+      <div class="film-details-box" id="film_box" onclick="showFilm4();">
+        <div class="film-details">
+          <div class="film-detail-img">
+            <img src="Banners/Creed 3.jpg" alt="Creed 3 Banner" />
+          </div>
+          <div class="film-detail-text-areas">
+            <h1 class="film-detail-title">
+              Creed III 2023 <span class="film-duration">1h 56m</span>
+            </h1>
+
+            <div class="film-rating">
+              <h2 class="rating-title">
+                Rating: <span class="rating-score">6.8/10</span>
+              </h2>
+            </div>
+
+            <p class="film-description">
+              Adonis has been thriving in both his career and family life, but
+              when a childhood friend and former boxing prodigy resurfaces, the
+              face-off is more than just a fight.
+            </p>
+
+            <div class="cast-box">
+              <h4 class="cast-title">Cast:</h4>
+              <ul class="cast-list">
+                <li>Michael B. Jordan as Adonis Creed</li>
+                <li>Tessa Thompson as Bianca Creed</li>
+                <li>Jonathan Majors as Damian Anderson</li>
+                <li>Wood Harris as Tony 'Little Duke' Burton</li>
+              </ul>
+            </div>
+
+            <div class="explore-field">
+              <button class="explore-button">Explore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="film-detail-main hide" id="film5">
+      <div class="film-details-box" id="film_box" onclick="showFilm5();">
+        <div class="film-details">
+          <div class="film-detail-img">
+            <img src="Banners/The Mother.jpeg" alt="The Mother Banner" />
+          </div>
+          <div class="film-detail-text-areas">
+            <h1 class="film-detail-title">
+              The Mother 2023 <span class="film-duration">1h 55m</span>
+            </h1>
+
+            <div class="film-rating">
+              <h2 class="rating-title">
+                Rating: <span class="rating-score">5.6/10</span>
+              </h2>
+            </div>
+
+            <p class="film-description">
+              While fleeing from dangerous assailants, an assassin comes out of
+              hiding to protect the daughter she left earlier in life.
+            </p>
+
+            <div class="cast-box">
+              <h4 class="cast-title">Cast:</h4>
+              <ul class="cast-list">
+                <li>Jennifer Lopez as The Mother</li>
+                <li>Lucy Paez as Zoe</li>
+                <li>Omari Hardwick as Cruise</li>
+                <li>Joseph Fiennes as Adrian</li>
+              </ul>
+            </div>
+
+            <div class="explore-field">
+              <button class="explore-button">Explore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="container3">
+        <div class="row">
+          <div class="footer-col">
+            <p>Website</p>
+            <ul>
+              <li><a href="aboutUs.html">about us</a></li>
+              <li><a href="Categories.html">Films</a></li>
+              <li><a href="Quiz.html">Quiz</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <p>get help</p>
+            <ul>
+              <li><a href="Terms&Conditions.html">Terms & Conditions</a></li>
+              <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+              <li><a href="#logo">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <p>Products</p>
+            <ul>
+              <li><a href="mainProducts.html">Clothing</a></li>
+              <li><a href="mainProducts.html">Posters</a></li>
+              <li><a href="mainProducts.html">Accessories</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <p>follow us</p>
+            <div class="social-links">
+              <a href="https://www.facebook.com/"
+                ><img src="img/Student2/facebook.png" alt="Facebook Logo"
+              /></a>
+              <a href="https://www.instagram.com/"
+                ><img src="img/Student2/instagram.png" alt="Instagram Logo"
+              /></a>
+              <a href="https://lk.linkedin.com/"
+                ><img src="img/Student2/linkedin.png" alt="Linkedin Logo"
+              /></a>
+              <a href="https://twitter.com/"
+                ><img src="img/Student2/twitter.png" alt="Twitter Logo"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-bottom">
+      <p>
+        Copyright &copy; 2023 Informatics Institute of Technology. Desinged by
+        Level 04 AI & Data Science Students.
+      </p>
+    </div>
+
+    <script src="script/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

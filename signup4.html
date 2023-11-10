@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--<meta charset="UTF-8">-->
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="css/signup.css" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="circle">4</div>
+      <div class="title">Products</div>
+      <div class="content">
+        <form id="application4" action="#" method="post">
+          <!--<div class="user-details">-->
+          <div class="input-box">
+            <span class="details"><label for="features">What type of products are you looking for?</label></span>
+            <input type="checkbox" name="features" id="poster" />
+            <label for="poster"> Movie posters </label>
+            <br />
+            <input type="checkbox" name="features" id="phone" />
+            <label for="phone"> Customized phone covers </label>
+            <br />
+            <input type="checkbox" name="features" id="storage" />
+            <label for="storage"> CD/DVD storage boxes </label>
+            <br />
+            <input type="checkbox" name="features" id="clap" />
+            <label for="clap"> Clapboards </label>
+            <br />
+            <input type="checkbox" name="features" id="glass" />
+            <label for="glass"> 3D glasses </label>
+            <br />
+            <input type="checkbox" name="features" id="vr" />
+            <label for="vr"> VR </label>
+            <br />
+            <input type="checkbox" name="features" id="projector" />
+            <label for="projector"> Projectors </label>
+            <br />
+            <input type="checkbox" name="features" id="speaker" />
+            <label for="speaker"> Speakers </label>
+            <br />
+            <input type="checkbox" name="features" id="game" />
+            <label for="game"> Games of your favorite movies </label>
+            <br />
+            <input type="checkbox" name="features" id="shirt" />
+            <label for="shirt"> Printed T-shirts of your favorite characters</label>
+            <br />
+            <input type="checkbox" name="features" id="bag" />
+            <label for="bag"> Bean bags </label>
+            <br />
+          </div>
+          <div class="user-details">
+            <div class="input-box">
+              <div class="slider">
+                <label for="fader">Select the price range for products (Rs.250-Rs.10000)</label>
+                <input
+                  type="range"
+                  value="250"
+                  min="250"
+                  max="10000"
+                  oninput="this.nextElementSibling.value = this.value" 
+                  id="fader" step="10" list="volsettings"/>
+                <output>250</output>
+                <datalist id="volsettings">
+                  <option>0</option>
+                  <option>20</option>
+                  <option>40</option>
+                  <option>60</option>
+                  <option>80</option>
+                  <option>100</option>
+                </datalist>
+              </div>
+            </div>
+            <div class="input-box">
+              <span class="details"><label for="maxproductlist">Number of items to appear in the result list (maximum 5)</label></span>
+              <input type="number" required id="maxproductlist" required oninput="validateMaxProductList()" />
+              <div id="errorname10"></div>
+              <script src="script/validation.js"></script>
+            </div>
+          </div>
+          <div class="input-box">
+            <input type="checkbox" id="privacypolicy" required />
+            <!--Link the terms conditions and privacy policy pages-->
+            <span class="details"><label for="privacypolicy">I accept the <a href="Terms&Conditions.html">Terms and Conditions</a> and
+              <a href="PrivacyPolicy.html">Privacy Policy</a> and consent to the processing
+               of my personal information in accordance with it.</label> </span>
+          </div>
+          <div class="button2">
+            <input type="reset" value="Reset" />
+          </div>
+          <div class="button">
+            <input type="submit" id ="submit1" value="Submit"/>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      window.addEventListener("load", function () {
+          document.getElementById("application4").addEventListener("submit", function (e) {
+              e.preventDefault();
+              var fName = localStorage.getItem("firstName");
+              alert("Welcome, " + fName + "! Thank you for registering with us.Our recommendations will be available shortly.You can explore our gallery page for exciting content. Enjoy your experience!");
+              window.location.href = 'index.html';
+          });
+      });
+  </script>
+  </body>
+</html>
