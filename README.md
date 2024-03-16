@@ -5,16 +5,15 @@
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Features](#features)
-3. [Research on existing systems](#research-on-existing-systems)
-4. [Technical Implementation](#technical-implementation)
-5. [Discussion of UX/UI Principles](#discussion-of-uxui-principles)
-6. [Self-Reflection](#self-reflection)
-7. [References](#references)
+3. [Team Members](#team-members)
+4. [Research on existing systems](#research-on-existing-systems)
+5. [Technical Implementation](#technical-implementation)
+6. [Discussion of UX/UI Principles](#discussion-of-uxui-principles)
 8. [Screenshots (Appendix)](#screenshots-appendix)
 
 ## Introduction
-Welcome to Flix Critique, a sophisticated Movie Recommendation System developed as a group coursework project for the CM1605 Web Technology module at the Informatics Institute of Technology, Department of Computing. Flix Critique aims to simplify the daunting task of choosing a movie by offering personalized recommendations, movie reviews, and a platform for purchasing movie-related products.
-
+Flix Critique is a revolutionary online platform designed to simplify the process of choosing the perfect movie. In today's vast entertainment landscape, with countless movies across various genres and languages available at our fingertips, Flix Critique offers a streamlined solution. This platform provides personalized movie recommendations, user reviews, and even a convenient way to purchase movie-related products. Say goodbye to the overwhelming task of selecting a film and hello to a more enjoyable movie browsing experience with Flix Critique.
+ 
 ## Features
 - Personalized movie recommendations based on user preferences.
 - Movie reviewing feature.
@@ -23,6 +22,12 @@ Welcome to Flix Critique, a sophisticated Movie Recommendation System developed 
 - Gallery page showcasing latest releases, top picks, and most watched movies.
 - Engaging movie quizzes.
 - User feedback mechanism for system refinement.
+
+## Team Members
+- [T. J. P. Fernando]()
+- [J. P. Rajes]()
+- [ J. T. S. Jeewandara]()
+- [P.A.T.S. Paththamperuma]()
 
 ## Research on existing systems
 We conducted research on existing movie-related websites such as IMDb and Letterboxd to understand their features and user experiences. While IMDb offers comprehensive details including cast, crew, and polls, Letterboxd focuses more on social interaction and user-generated lists. Flix Critique combines elements from both platforms to create a modern and user-friendly movie browsing experience.
@@ -41,23 +46,31 @@ We conducted research on existing movie-related websites such as IMDb and Letter
 - Color Balance/Selection/Consistency: Implemented light and dark theme options for user customization.
 - Typography/Consistency: Ensured consistency in font styles and sizes throughout the website.
 - Accessibility: Form validation and color contrast tests were performed to enhance accessibility.
-- Site Diagram: Visual representation of website structure and flow provided for clarity.
-
-## Self-Reflection
-Reflect on the development process, challenges faced, and lessons learned during the project.
-
-## References
-List of sources and tools used for research and implementation.
 
 ## Screenshots (Appendix)
 Visual representations of key features and functionalities of Flix Critique.
 
-For more information and to explore Flix Critique, visit [link_to_github_repository].
+![Index](https://github.com/SandeepJeewandara/Project_SCAMS/assets/137886591/7fcf7456-14bd-42f9-8076-1ce1fdfe1907)
 
-Developed by Group 01:
-- J. P. Rajes (2312545 | 20220268)
-- P.A.T.S. Paththamperuma (2312544 | 20220256)
-- J. T. S. Jeewandara (2312543 | 20220244)
-- T. J. P. Fernando (2312549 | 20220346)
+------------------- Home Page -------------------
+<hr>
+
+![Quiz3](https://github.com/SandeepJeewandara/Project_SCAMS/assets/137886591/9e939398-16b7-463d-8be7-cb607cfdbe60)
+
+------------------- Quiz Page -------------------
+<hr>
+
+![Recomend Preview](https://github.com/SandeepJeewandara/Project_SCAMS/assets/137886591/0cb4f82f-3e2e-41db-bd42-8ed3e59d82a5)
+-------------------Recommendations-------------------
+<hr>
+
+![Feedback form](https://github.com/SandeepJeewandara/Project_SCAMS/assets/137886591/e14320a9-8cc9-4f0d-8c3b-8e3e03328119)
+------------------- Feedback Form -------------------
+<hr>
+
+![footer preview](https://github.com/SandeepJeewandara/Project_SCAMS/assets/137886591/b519c26f-9b7e-4993-8966-15962e015bfe)
+------------------- Footer -------------------
+<hr>
+
 
 *Disclaimer: This project was developed as part of academic coursework for the CM1605 Web Technology module at the Informatics Institute of Technology. Flix Critique is not a commercial product and is intended for educational purposes only.*
